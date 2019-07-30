@@ -21,6 +21,8 @@ function printProductCode(prodCode) {
     console.log("Product Size: " + prodCode.prodSize);
 }
 
+//let labelNumberArr = ["ACME:123-L", "DI:12345-M", "ACE:1-12"];
+
 let labelNumber1 = parseProductCode("ACME:123-L");
 let labelNumber2 = parseProductCode("DI:12345-M");
 let labelNumber3 = parseProductCode("ACE:1-12")
