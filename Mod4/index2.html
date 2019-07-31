@@ -1,0 +1,58 @@
+<!-- ICE CREAM
+How many scoops?
+toppings (checkboxes) 
+Hot Fudge ($1.25)
+Sprinkles ($0.25)
+Whipped Cream ($0.75) 
+Price This Dessert button
+Price: xx.xx
+Scoops
+1: 2.50
+2: 3.75
+3: 5.00 -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Ice Cream</title>
+</head>
+
+<body class="text-center">
+    <h1>Ice Cream</h1>
+    <div class="row">
+        <form class="col">
+            <fieldset>
+                <legend>Amount of Scoops:</legend>
+                <input type="number" id="scoopCount" name="scoopCount" min="1" max="4">
+
+                <legend>Toppings Options</legend>
+                <input type="checkbox" id="hotFudge" name="hotFudge" value="hotFudge">Hot Fudge ($1.25)<br>
+                <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">Sprinkles ($0.25)<br>
+                <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">Whipped Cream ($0.75)<br>
+            </fieldset>
+
+            <button type="button" class="btn btn-primary" id="totalPriceCalc">Price This Dessert</button>
+
+            <br><br>
+
+            <input type="text" id="dessertPrice" name="dessertPrice">
+
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/icecream.js"></script>
+</body>
+
+</html>
