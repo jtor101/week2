@@ -9,6 +9,8 @@ console.log(oldest);
 console.log(middle);
 console.log(youngest);*/
 
+kids.sort();
+
 for (let i = 0; i < length; i++) {
     console.log(kids[i]);
 }

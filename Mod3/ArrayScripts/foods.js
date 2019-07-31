@@ -7,12 +7,13 @@ function getCost(lunch) {
     }
 
     console.log("Subtotal: $" + sum.toFixed(2));
+
     let tax = sum * .08; // 8% tax
-
     console.log("Sales Tax: $" + tax.toFixed(2));
-    let tip = sum * .18; // 18% tip
 
+    let tip = sum * .18; // 18% tip
     console.log("Gratuity: $" + tip.toFixed(2));
+
     let finalLunchCost = sum + tax + tip;
 
     return finalLunchCost;
