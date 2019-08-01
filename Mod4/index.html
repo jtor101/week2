@@ -9,24 +9,55 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>ACME Car Rental</title>
 </head>
 
-<body>
-    <h1>Hello, world!</h1>
+<body class="text-center">
+    <h1>ACME Car Rental</h1>
 
-    <fieldset>
-        <legend>Rental Car Options</legend>
-        <input type="checkbox" id="tollTag" name="tollTag" value="tollTag" checked>Electronic Toll Tag ($3.95/day plus tolls)<br>
-        <input type="checkbox" id="gps" name="gps" value="gps">GPS ($4.95/day)<br>
-        <input type="checkbox" id="roadside" name="roadside" value="roadside">Roadside Assistance ($2.95/day)<br>
-    </fieldset>
+    <form>
+        <fieldset class="mt-4">
+            <label for="pickupDateField">Pickup Date: </label>
+            <input type="date" id="pickupDateField" name="pickupDateField"><br>
+            <label for="numOfDaysField">Number of Days: </label>
+            <input type="number" id="numOfDaysField" name="numOfDaysField" min="1">
+        </fieldset>
+
+        <fieldset class="mt-4">
+            <legend>Options</legend>
+            <input type="checkbox" id="tollTagCBox" name="tollTag" value="tollTag">Electronic Toll Tag ($3.95/day plus tolls)<br>
+            <input type="checkbox" id="gpsCBox" name="gps" value="gps">GPS ($4.95/day)<br>
+            <input type="checkbox" id="roadsideCBox" name="roadside" value="roadside">Roadside Assistance ($2.95/day)<br>
+        </fieldset>
+
+        <fieldset class="mt-4">
+            <legend>Under 25?</legend>
+            <input type="radio" name="under25Surcharge" id="under25No" checked>
+            <label for="under25Yes">No</label>
+            <input type="radio" name="under25Surcharge" id="under25Yes">
+            <label for="under25Yes">Yes</label>
+        </fieldset>
+
+        <button type="button" class="btn btn-primary mt-4" id="totalCostBtn">Estimate Total Cost</button>
+
+        <fieldset class="mt-4">
+            <legend>Costs</legend>
+            <label for="carRentalCostField">Car Rental: </label>
+            <input type="text" name="carRentalCostField" id="carRentalCostField"><br>
+            <label for="optionsCostField">Options: </label>
+            <input type="text" name="optionsCostField" id="optionsCostField"><br>
+            <label for="under25SurchargeField">Under 25 Surcharge: </label>
+            <input type="text" name="under25SurchargeField" id="under25SurchargeField"><br><br>
+            <label for="totalCostField">Total Due: </label>
+            <input type="text" name="totalCostField" id="totalCostField">
+        </fieldset>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="rentalScript.js"></script>
 </body>
-
-</html>
+< /html>
